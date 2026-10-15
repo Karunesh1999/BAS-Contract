@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link, useLocation } from 'react-router-dom'
 import { COMPANY_DATA } from '../../models/data/company.data'
-import { ShieldCheck, Star, Globe, Phone, Menu, X, ArrowRight } from 'lucide-react'
+import { ShieldCheck, Star, Phone, Menu, X, ArrowRight } from 'lucide-react'
 import { Button } from '../ui/Button'
 
 export interface HeaderProps {
@@ -50,21 +50,13 @@ export const Header: React.FC<HeaderProps> = ({
             </span>
           </div>
 
-          {/* Right Direct Links */}
-          <div className="flex items-center gap-4 sm:gap-6 ml-auto">
-            <Link
-              to="/pagina-en-espanol"
-              className="text-blue-200 hover:text-white transition-colors flex items-center gap-1 text-[11px] sm:text-xs font-medium"
-            >
-              <Globe className="w-3 h-3 text-amber-400 shrink-0" />
-              <span>Hablamos Español / Página en Español</span>
-            </Link>
-
+          {/* Right Direct Phone Access */}
+          <div className="flex items-center gap-4 ml-auto">
             <a
               href={`tel:${COMPANY_DATA.phoneRaw}`}
-              className="text-white font-bold flex items-center gap-1 hover:text-blue-300 transition-colors text-[11px] sm:text-xs"
+              className="text-white font-bold flex items-center gap-1.5 hover:text-blue-300 transition-colors text-[11px] sm:text-xs"
             >
-              <Phone className="w-3 h-3 text-emerald-400 shrink-0" />
+              <Phone className="w-3.5 h-3.5 text-emerald-400 shrink-0" />
               <span>{COMPANY_DATA.phone}</span>
             </a>
           </div>

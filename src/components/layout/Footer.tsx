@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import { COMPANY_DATA } from '../../models/data/company.data'
-import { MapPin, Phone, ShieldCheck, Mail, ArrowUpRight } from 'lucide-react'
+import { MapPin, Phone, ShieldCheck, Mail } from 'lucide-react'
 
 export const Footer: React.FC = () => {
   return (
@@ -110,11 +110,6 @@ export const Footer: React.FC = () => {
               <li>
                 <Link to="/contact-us" className="text-slate-400 hover:text-white transition-colors">
                   Contact Us
-                </Link>
-              </li>
-              <li>
-                <Link to="/pagina-en-espanol" className="text-amber-400 hover:text-amber-300 transition-colors font-semibold flex items-center gap-1">
-                  Español <ArrowUpRight className="w-3 h-3" />
                 </Link>
               </li>
             </ul>

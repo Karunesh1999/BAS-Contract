@@ -296,23 +296,6 @@ export const ServicesConsultationQuoteSection: React.FC<
                     />
                   </div>
 
-                  {/* Spanish checkbox */}
-                  <div className="flex items-center gap-2.5 pt-1">
-                    <input
-                      id="spanish-option"
-                      type="checkbox"
-                      checked={formData.preferSpanish}
-                      onChange={(e) => updateField('preferSpanish', e.target.checked)}
-                      className="w-4 h-4 rounded text-[#0051d5] focus:ring-[#0051d5] border-slate-300 cursor-pointer"
-                    />
-                    <label
-                      htmlFor="spanish-option"
-                      className="text-xs text-slate-600 font-medium cursor-pointer"
-                    >
-                      Prefer consultation in Spanish / Prefiero consulta en Español
-                    </label>
-                  </div>
-
                   {/* Submit Button */}
                   <button
                     type="submit"

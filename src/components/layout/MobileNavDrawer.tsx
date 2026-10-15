@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link, useLocation } from 'react-router-dom'
 import { COMPANY_DATA } from '../../models/data/company.data'
-import { X, Phone, Globe, ShieldCheck, ArrowRight, MapPin } from 'lucide-react'
+import { X, Phone, ArrowRight, ShieldCheck, MapPin } from 'lucide-react'
 import { Button } from '../ui/Button'
 
 export interface MobileNavDrawerProps {
@@ -19,14 +19,13 @@ export const MobileNavDrawer: React.FC<MobileNavDrawerProps> = ({
 
   if (!isOpen) return null
 
-  const navLinks = [
+  const baseNavLinks = [
     { label: 'Home', path: '/' },
     { label: 'About Us', path: '/about-us' },
     { label: 'Services', path: '/services' },
     { label: 'Project Gallery', path: '/gallery' },
     { label: 'Client Reviews', path: '/reviews' },
     { label: 'Contact Us', path: '/contact-us' },
-    { label: 'Página en Español', path: '/pagina-en-espanol', highlight: true },
   ]
 
   const handleLinkClick = () => {
@@ -43,7 +42,7 @@ export const MobileNavDrawer: React.FC<MobileNavDrawerProps> = ({
 
       {/* Slide-out panel */}
       <div className="fixed inset-y-0 right-0 max-w-xs w-full bg-white shadow-2xl flex flex-col justify-between p-6 z-10 animate-in slide-in-from-right duration-250">
-        <div className="space-y-6">
+        <div className="space-y-5">
           {/* Drawer Top */}
           <div className="flex items-center justify-between pb-4 border-b border-slate-100">
             <div className="flex items-center gap-2.5">
@@ -64,7 +63,7 @@ export const MobileNavDrawer: React.FC<MobileNavDrawerProps> = ({
             </div>
             <button
               onClick={onClose}
-              className="p-1.5 text-slate-400 hover:text-slate-700 rounded-lg hover:bg-slate-100 transition-colors"
+              className="p-1.5 text-slate-400 hover:text-slate-700 rounded-lg hover:bg-slate-100 transition-colors cursor-pointer"
               aria-label="Close menu"
             >
               <X className="w-5 h-5" />
@@ -73,7 +72,7 @@ export const MobileNavDrawer: React.FC<MobileNavDrawerProps> = ({
 
           {/* Nav List */}
           <nav className="flex flex-col space-y-1">
-            {navLinks.map((item) => {
+            {baseNavLinks.map((item) => {
               const active = location.pathname === item.path
               return (
                 <Link
@@ -83,15 +82,10 @@ export const MobileNavDrawer: React.FC<MobileNavDrawerProps> = ({
                   className={`px-3 py-2.5 rounded-xl text-sm font-semibold transition-colors flex items-center justify-between ${
                     active
                       ? 'bg-blue-50 text-[#0051d5]'
-                      : item.highlight
-                      ? 'text-amber-700 bg-amber-50 hover:bg-amber-100'
                       : 'text-slate-700 hover:bg-slate-50'
                   }`}
                 >
-                  <span className="flex items-center gap-2">
-                    {item.highlight && <Globe className="w-4 h-4 text-amber-600" />}
-                    {item.label}
-                  </span>
+                  <span>{item.label}</span>
                   <ArrowRight className="w-3.5 h-3.5 opacity-50" />
                 </Link>
               )

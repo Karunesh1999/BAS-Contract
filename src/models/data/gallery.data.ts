@@ -653,8 +653,8 @@ export const GALLERY_CONSULTATION_INFO = {
       desc: 'We handle architectural plans, city plan-checks, permit submittals, and inspection scheduling.',
     },
     {
-      title: 'Bilingual Spanish Communication',
-      desc: 'Ofrecemos asesoría completa en español durante cada etapa de diseño y construcción.',
+      title: 'Direct On-Site Supervision',
+      desc: 'Founder Belen Silva personally oversees framing, concrete footings, and structural inspections.',
     },
     {
       title: 'Direct Phone Access',

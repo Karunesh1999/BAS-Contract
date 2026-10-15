@@ -139,7 +139,6 @@ export interface ServicesQuoteFormData {
   propertyCity: string
   primaryService: string
   projectNotes: string
-  preferSpanish: boolean
 }
 
 export interface ServiceTableRow {

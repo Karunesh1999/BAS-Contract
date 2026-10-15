@@ -8,7 +8,6 @@ const INITIAL_FORM: ServicesQuoteFormData = {
   propertyCity: '',
   primaryService: '',
   projectNotes: '',
-  preferSpanish: false,
 }
 
 export function useServicesQuoteController() {

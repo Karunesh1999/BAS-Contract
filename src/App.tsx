@@ -11,7 +11,6 @@ import { ServicesPage } from './views/pages/ServicesPage'
 import { AduJaduPage } from './views/pages/AduJaduPage'
 import { ReviewsPage } from './views/pages/ReviewsPage'
 import { ContactPage } from './views/pages/ContactPage'
-import { SpanishPage } from './views/pages/SpanishPage'
 import { GalleryPage } from './views/pages/GalleryPage'
 
 // Scroll restoration on navigation
@@ -73,7 +72,7 @@ export function App() {
           <Route path="/portfolio" element={<Navigate to="/gallery" replace />} />
           <Route path="/reviews" element={<ReviewsPage />} />
           <Route path="/contact-us" element={<ContactPage />} />
-          <Route path="/pagina-en-espanol" element={<SpanishPage />} />
+          <Route path="/pagina-en-espanol" element={<Navigate to="/" replace />} />
           <Route path="/free-estimate" element={<HomePage onScrollToEstimate={handleScrollToEstimate} />} />
           {/* Fallback */}
           <Route path="*" element={<HomePage onScrollToEstimate={handleScrollToEstimate} />} />
