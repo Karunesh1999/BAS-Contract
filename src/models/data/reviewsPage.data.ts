@@ -283,14 +283,25 @@ export const DETAILED_REVIEWS_LIST: DetailedReviewItem[] = [
 ]
 
 export const REVIEWS_SPOTLIGHT_DATA = {
-  videoTitle: 'Arcadia Ave Homeowner Walkthrough (4:18)',
+  projectTitle: 'Arcadia Ave Detached ADU',
   location: 'Vista, CA',
-  videoThumbnail: '/images/reviews/walkthrough-preview.jpg',
+  completedImage: '/images/reviews/walkthrough-preview.jpg',
+  framingImage: '/images/projects/adu-framing.jpg',
   alt: 'Modern architectural ADU home completed in Vista California with clean stucco siding and landscaping',
+  framingAlt: 'Heavy timber framing construction phase with direct on-site inspection in Vista California',
   kicker: 'FIELD SUPERVISION PHILOSOPHY',
   headline: '“When you hire BAS, Belen is on your job site every single morning.”',
   description:
     'Most general contracting firms sell your project and pass the framing to nameless subcontractors. At BAS General Contractor Inc., owner Belen Silva supervises every structural header, concrete pour, and final trim detail in person.',
+  clientQuote:
+    '“Belen was personally on our job site at 7:00 AM every single morning. He caught framing details that even the city inspector appreciated. Zero change orders, finished on schedule!”',
+  clientName: 'The Miller Family',
+  clientAddress: 'Arcadia Ave Homeowners • Vista, CA',
+  metrics: [
+    { label: 'Footprint', value: '750 Sq Ft' },
+    { label: 'Timeline', value: '14 Weeks' },
+    { label: 'Change Orders', value: '$0 (Zero)' },
+  ],
   points: [
     {
       title: 'Fixed-Fee',

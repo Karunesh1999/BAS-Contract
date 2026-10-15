@@ -29,7 +29,7 @@ export const VideoPlayerModal: React.FC<VideoPlayerModalProps> = ({
         {/* Mock Custom Interactive Video Player */}
         <div className="relative rounded-2xl overflow-hidden bg-slate-950 aspect-video shadow-2xl group">
           <img
-            src="https://lh3.googleusercontent.com/aida-public/AB6AXuAUwxz0Ar2k5yfY7d0SYUxLkxzQoKqbBO_SOIorHkK6AYy9pF_v6iilvlVZts9nyZdB2VWZL3qgBvyBHaLLre9SMY9PomTOJjBn7IT8tpSub3oJmkIY_Ajbs59VKuNpMCy60tYKX_NL7mFqe3jtZqVUWNv-OhnHKn770N6Rhz4Qg-E1xR04wcCkhCqRZO-5rBIKAFc0H9LMsaQDeAhhs-5np5VMY9R_zheZ8RWd2r4f-8ModYi1Nf_K-A"
+            src="/images/reviews/walkthrough-preview.jpg"
             alt="Detached ADU walkthrough video frame"
             className="w-full h-full object-cover"
           />

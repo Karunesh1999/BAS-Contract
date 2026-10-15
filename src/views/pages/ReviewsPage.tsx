@@ -78,9 +78,7 @@ export const ReviewsPage: React.FC = () => {
       <ReviewsGridSection reviews={reviewsController.displayedReviews} />
 
       {/* 5. Spotlight Client Case & Field Proof (Cinematic Section) */}
-      <ReviewsSpotlightSection
-        onPlayVideo={reviewsController.openVideoModal}
-      />
+      <ReviewsSpotlightSection />
 
       {/* 6. Leave a Verified Review Intake Section */}
       <ReviewsWriteFormSection controller={reviewsController} />
